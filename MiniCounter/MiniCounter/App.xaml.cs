@@ -18,7 +18,7 @@ namespace MiniCounter
             InitializeComponent();
 
             MobileCenter.Start(typeof(Analytics), typeof(Crashes));
-            MainPage = new MiniCounter.MainPage();
+            MainPage = new MiniCounter.Pages.MainPage();
         }
 
         protected override void OnStart()
