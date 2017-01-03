@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 
 namespace MiniCounter.Droid
 {
@@ -20,6 +21,8 @@ namespace MiniCounter.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            MobileCenter.Configure("c1242437-cda0-4cde-a766-eb42796ed065");
+
             LoadApplication(new App());
         }
     }

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+
 using Xamarin.Forms;
 
 namespace MiniCounter
@@ -13,6 +17,7 @@ namespace MiniCounter
         {
             InitializeComponent();
 
+            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
             MainPage = new MiniCounter.MainPage();
         }
 
